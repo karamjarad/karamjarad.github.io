@@ -14,90 +14,131 @@
 
         /* Body Styling */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9fb;
             color: #333;
             line-height: 1.6;
+            padding-top: 70px; /* to account for fixed navbar */
         }
 
         /* Navigation Bar */
         nav {
-            background-color: #0044cc;
+            background-color: #2a2a72;
             padding: 1rem;
-            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
             list-style: none;
+            text-align: center;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
 
         nav ul li a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 1.2rem;
-            padding: 0.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: #003399;
-            border-radius: 5px;
+            color: #ff9f1c;
         }
 
         /* Header Section */
         header {
             text-align: center;
-            padding: 2rem;
-            background-color: #f0f0f5;
-            margin-bottom: 1rem;
+            padding: 4rem 1rem;
+            background: linear-gradient(to bottom, #2a2a72, #003366);
+            color: white;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            color: #0044cc;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
         }
 
         header p {
             font-size: 1.2rem;
-            margin-top: 1rem;
         }
 
         /* Section Styling */
         section {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 1rem;
+            margin: 2rem auto;
+            padding: 2rem;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #333;
+            color: #2a2a72;
         }
 
-        section p {
+        section p, section ul {
             font-size: 1rem;
-            line-height: 1.6;
+            line-height: 1.8;
+        }
+
+        section ul {
+            list-style: disc inside;
+            margin-top: 1rem;
+        }
+
+        section ul li {
+            margin-bottom: 0.5rem;
         }
 
         /* Footer Section */
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: #0044cc;
-            color: white;
+            padding: 1.5rem;
+            background-color: #2a2a72;
+            color: #ffffff;
+            margin-top: 2rem;
         }
 
         footer p {
             font-size: 1rem;
+        }
+
+        /* Link Styling */
+        a {
+            color: #2a2a72;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff9f1c;
+        }
+
+        /* Button Styling for Download Links */
+        .btn-download {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            margin-top: 1rem;
+            background-color: #ff9f1c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #e58917;
         }
     </style>
 </head>
@@ -116,14 +157,14 @@
 
     <!-- Header Section -->
     <header id="home">
-        <h1>PhD Candidate in Economics</h1>
-        <p>Welcome to my academic website where you can find information about my research, CV, teaching experience, and job market paper.</p>
+        <h1>Karam Jarad</h1>
+        <p>PhD Candidate in Economics</p>
     </header>
 
     <!-- Job Market Paper Section -->
     <section id="jmp">
         <h2>Job Market Paper</h2>
-        <p>You can read my job market paper titled "<em>The Effect of Tax-Interactions on Optimal Tariffs</em>" by <a href="job_market_paper.pdf" target="_blank">clicking here</a>.</p>
+        <p>You can read my job market paper titled "<em>The Effect of Tax-Interactions on Optimal Tariffs</em>" by <a href="job_market_paper.pdf" class="btn-download" target="_blank">Download Paper</a>.</p>
         <p>This paper explores the impact of tax-interactions on optimal tariff levels in a global trade model, highlighting the welfare implications for both large and small open economies.</p>
     </section>
 
@@ -135,8 +176,8 @@
 
         <h3>Working Papers</h3>
         <ul>
-            <li>"Trade and Environmental Policies in the Era of Globalization" [Download Paper]</li>
-            <li>"The Labor Market Effects of Trade Shocks" [Download Paper]</li>
+            <li>"Trade and Environmental Policies in the Era of Globalization" - [<a href="#">Download Paper</a>]</li>
+            <li>"The Labor Market Effects of Trade Shocks" - [<a href="#">Download Paper</a>]</li>
         </ul>
 
         <h3>Publications</h3>
@@ -151,18 +192,18 @@
         <h2>Teaching</h2>
         <p>I have taught or assisted in the following courses at [University]:</p>
         <ul>
-            <li>**International Trade (400-level)**: Covered trade theories, policy analysis, and empirical methods.</li>
-            <li>**Environmental Economics (400-level)**: Examined market-based approaches to environmental problems.</li>
-            <li>**Econometrics (300-level)**: Introduced students to regression analysis and econometric techniques.</li>
+            <li><strong>International Trade (400-level)</strong>: Covered trade theories, policy analysis, and empirical methods.</li>
+            <li><strong>Environmental Economics (400-level)</strong>: Examined market-based approaches to environmental problems.</li>
+            <li><strong>Econometrics (300-level)</strong>: Introduced students to regression analysis and econometric techniques.</li>
         </ul>
-        <p>You can view my teaching evaluations by <a href="teaching_evaluations.pdf" target="_blank">clicking here</a>.</p>
+        <p>You can view my teaching evaluations by <a href="teaching_evaluations.pdf" class="btn-download" target="_blank">clicking here</a>.</p>
     </section>
 
     <!-- Curriculum Vitae Section -->
     <section id="cv">
         <h2>Curriculum Vitae</h2>
         <p>
-            You can download my CV by clicking <a href="Karam Jarad- CV.pdf" target="_blank">here</a>.
+            You can download my CV by <a href="Karam Jarad- CV.pdf" class="btn-download" target="_blank">clicking here</a>.
         </p>
         <p>This section includes a brief summary of my academic background, research interests, teaching experience, and publications.</p>
     </section>
@@ -170,14 +211,4 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>Email: karam.jarad@ucalgary.ca</p>
-        <p>Office Address: SS 417, 2500 University Drive NW, Calgary, Alberta T2N 1N4</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/karam-jarad-435b58170/" target="_blank">Your LinkedIn Profile</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Karam Jarad | Economics Department | All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+        <p><strong>E
