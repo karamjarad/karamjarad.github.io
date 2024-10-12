@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhD Candidate Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0044cc;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+        }
+
+        nav ul li a:hover {
+            background-color: #003399;
+            border-radius: 5px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f0f0f5;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #0044cc;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0044cc;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>I'm a PhD candidate in Economics, Univ.</p>
-  <a href="CV.pdf">Download my CV</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#jmp">Job Market Paper</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>PhD Candidate in Economics</h1>
+        <p>Welcome to my academic website where you can find information about my research, CV, and job market paper.</p>
+    </header>
+
+    <!-- Main Content Sections -->
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>Download my <a href="cv.pdf" target="_blank">CV here</a>.</p>
+        <p>This section includes a brief summary of my academic background, research interests, teaching experience, and publications.</p>
+    </section>
+
+    <section id="jmp">
+        <h2>Job Market Paper</h2>
+        <p>You can read my job market paper titled "<em>Title of the Paper</em>" by <a href="job_market_paper.pdf" target="_blank">clicking here</a>.</p>
+        <p>This paper focuses on [brief description of the paper], exploring the [research question] and contributing to the [research field].</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: yourname@university.edu</p>
+        <p>Office Address: Department of Economics, [Your University Name]</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">Your LinkedIn Profile</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PhD Candidate | Economics Department | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
